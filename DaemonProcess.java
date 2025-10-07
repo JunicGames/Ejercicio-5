@@ -25,7 +25,6 @@ public class DaemonProcess extends Process {
 
     @Override
     public String execute(int timeSlice) {
-        // El daemon ignora el time slice y sigue funcionando
         return execute();
     }
 }
