@@ -19,16 +19,8 @@ public abstract class Process {
         this.name = name;
     }
 
-    /**
-     * Ejecuta el proceso sin parámetros (modo por defecto).
-     * Implementado polimórficamente en subclases.
-     */
     public abstract String execute();
 
-    /**
-     * Ejecuta el proceso con un time slice o parámetro entero.
-     * Algunas subclases pueden ignorar el parámetro.
-     */
     public abstract String execute(int timeSlice);
 
     @Override
